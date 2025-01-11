@@ -14,7 +14,7 @@ public class Main {
 //Задача 3
         int deliveryDistance = 95;
         int days;
-        days = dist(deliveryDistance);
+        days = dayDelivery(deliveryDistance);
         if (days != 0) {
             System.out.println("Потребуется дней: " + days);
         } else {
@@ -54,7 +54,7 @@ public class Main {
         }
     }
 
-    public static int dist(int deliveryDistance) {
+    public static int dayDelivery(int deliveryDistance) {
         int deliveryDay = 0;
         if (deliveryDistance <= 20) {
             deliveryDay = 1;
